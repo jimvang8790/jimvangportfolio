@@ -1,7 +1,7 @@
 myApp.service('GithubAPI', function($http) {
   //Enter your token and username here:
-  var oauthToken = '';
-  var username = '';
+  var oauthToken = '8ec5f0ec1e63ef0a8ffe8774ef3af5a6abd3417a';
+  var username = 'jimvang8790';
 
   //Call to Github API to fetch user's profile info
   this.githubProfile = function(){
@@ -16,7 +16,7 @@ myApp.service('GithubAPI', function($http) {
       console.log(response.data);
       return response.data;
     });
-  }
+  };
 
   //Call to Github API to fetch list of user's repos
   this.githubRepos = function(){
@@ -31,5 +31,5 @@ myApp.service('GithubAPI', function($http) {
       console.log(response.data);
       return response.data;
     });
-  }
+  };
 });
