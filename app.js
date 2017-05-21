@@ -1,14 +1,10 @@
-// requires
+// requires express, path, and variable app calling express
 var express = require('express');
 var path = require('path');
 var app = express();
-var bodyParser = require('body-parser');
 
-// uses
-app.use(bodyParser.urlencoded({extended: true}));
+// start serving the files directly
 app.use(express.static('public'));
-
-app.get('/');
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/views/index.html'));

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Weekend Challenge 06</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
@@ -10,27 +10,17 @@
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <base href="/">
   </head>
-  <body>
+  <body ng-app="myApp">
     <div class="jumbotron"><h1>Jim's Github</h1></div>
     <nav>
       <a href="/" class="tabs">Home</a>
       <a href="/profile" class="tabs">Profile</a>
       <a href="/repos" class="tabs">Repositories</a>
     </nav>
-    <ng-view>
-      <!-- Where each html will swap out -->
-    </ng-view>
+    <div>
+      <ng-view>
+        <!-- Where each html will swap out -->
+      </ng-view>
+    </div>
   </body>
 </html>
-
-<!-- ,
-"devDependencies": {},
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/jimvang8790/psi-weekend6-portfolio.git"
-},
-"bugs": {
-  "url": "https://github.com/jimvang8790/psi-weekend6-portfolio/issues"
-},
-"homepage": "https://github.com/jimvang8790/psi-weekend6-portfolio#readme"
-} -->

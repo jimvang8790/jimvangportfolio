@@ -1,50 +1,46 @@
 var myApp = angular.module('myApp', ['ngRoute']);
-
 // globals
-var vm = this;
-
+// var vm = this;
 // Angular configuration (routes)
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
     template: '<div> This is the default </div>',
     controller: ''
-  })
-  .when('/profile', {
+  }).when('/profile', {
     templateUrl: 'views/profile.html',
     controller: 'ProfileController as pc'
-  })
-  .when('/repos', {
+  }).when('/repos', {
     templateUrl: 'views/repos.html',
     controller: 'ReposController as rc'
-  })
-  .otherwise('/');
-
+  }).otherwise('/');
   $locationProvider.html5Mode(true);
 });// end config
 
 myApp.controller('ProfileController', function($http, GithubAPI){
-
+  console.log('ProfileController Loaded');
+  var vm = this;
+  vm.items = [];
 // calling GithubAPI service and the function githubProfile to grab jimvang8790 profile info
  vm.getProfile = function() {
    GithubAPI.githubProfile().then(function(data){
      console.log('get profile here:-->', data);
-     vm.items = {
-       login: data.login,
-       id: data.id,
-       followers: data.followers,
-       following: data.following
-     };
+     vm.items = data;
      console.log('this is vm.items->', vm.items);
    });
  };// end getProfile
-
  vm.getProfile();
-
 });// end ProfileController
 
 myApp.controller('ReposController', function($http, GithubAPI){
-
+  var vm = this;
+  vm.object = [];
 // calling GithubAPI service and the function githubRepos to grab jimvang8790 repos info
- vm.getRepos = GithubAPI.githubRepos();
-
+ vm.getRepos = function() {
+   GithubAPI.githubRepos().then(function(data){
+     console.log('get repos herer:->', data);
+     vm.object = data;
+     console.log('this is vm.items->', vm.object);
+   });
+ };// end getRepos
+ vm.getRepos();
 });// end ReposController

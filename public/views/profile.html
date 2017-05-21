@@ -6,8 +6,8 @@
     of Git as well as adding its own features.</p>
 </div>
 
-<div ng-init="pc.getProfile()">
-  <div ng-repeat="items in pc.items">
-    <h2>Username: {{items.login}}</h2>
-  </div>
+<div>
+  <h2>Username: {{pc.items.login}}</h2>
+  <h2>Followers: {{pc.items.followers}}</h2>
+  <h2>Following: {{pc.items.following}}</h2>
 </div>
