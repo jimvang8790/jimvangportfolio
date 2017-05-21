@@ -13,5 +13,16 @@
   "dependencies": {
     "angular": "^1.6.4",
     "angular-route": "^1.6.4",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimvang8790/psi-weekend6-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimvang8790/psi-weekend6-portfolio/issues"
+  },
+  "homepage": "https://github.com/jimvang8790/psi-weekend6-portfolio#readme"
+}

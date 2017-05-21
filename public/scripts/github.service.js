@@ -32,4 +32,5 @@ myApp.service('GithubAPI', function($http) {
       return response.data;
     });
   };
-});
+
+});// end service

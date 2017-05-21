@@ -1,4 +1,13 @@
 <div><h1>Jim's Profile</h1></div>
 <div>
+  <h2>Profile</h2>
+  <p>GitHub is a web-based Git or version control repository and Internet hosting service.
+    It offers all of the distributed version control and source code management (SCM) functionality
+    of Git as well as adding its own features.</p>
+</div>
 
+<div ng-init="pc.getProfile()">
+  <div ng-repeat="items in pc.items">
+    <h2>Username: {{items.login}}</h2>
+  </div>
 </div>
