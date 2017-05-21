@@ -1,15 +1,17 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Objectives - Angular practice with multiple views, controllers, and a service - Front end styling - Hosting without a database on Heroku",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
     "express": "^4.15.3"
   }
-}
