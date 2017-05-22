@@ -1,13 +1,16 @@
-<div><h1>Jim's Profile</h1></div>
-<div>
-  <h2>Profile</h2>
-  <p>GitHub is a web-based Git or version control repository and Internet hosting service.
-    It offers all of the distributed version control and source code management (SCM) functionality
-    of Git as well as adding its own features.</p>
-</div>
-
-<div>
-  <h2>Username: {{pc.items.login}}</h2>
-  <h2>Followers: {{pc.items.followers}}</h2>
-  <h2>Following: {{pc.items.following}}</h2>
+<div class="profile"><h1>Github Profile</h1></div>
+<hr class="line">
+<div class="container">
+  <div class="col-sm-6">
+    <h3>Name: {{pc.items.name}}</h3>
+    <h3>Profile Name: {{pc.items.login}}</h3>
+    <h3>Url: {{pc.items.html_url}}</h3>
+    <img ng-src="{{pc.items.avatar_url}}" class="gitImage">
+  </div>
+  <div class="col-sm-6">
+    <h3>Public Repos: {{pc.items.public_repos}}</h3>
+    <h3>Private Repos: {{pc.items.total_private_repos}}</h3>
+    <h3>Followers: {{pc.items.followers}}</h3>
+    <h3>Following: {{pc.items.following}}</h3>
+  </div>
 </div>

@@ -5,9 +5,13 @@
   color: ivory;
 }
 
+/*********
+  Home Page
+**********/
 .nav {
   text-align: center;
   font-family: 'Kumar One', cursive;
+  text-decoration: underline;
 }
 
 .tabs {
@@ -18,3 +22,29 @@
   text-align: center;
   font-family: 'Kumar One', cursive;
 }
+
+.link {
+  border-radius: 50%;
+}
+
+/*********
+  Profile Page
+**********/
+.container,
+.profile,
+.info {
+  text-align: center;
+  font-family: 'Kumar One', cursive;
+}
+
+.gitImage {
+  border-radius: 50%;
+}
+
+.line {
+  border-top: 3px double #8c8b8b;
+}
+
+/*********
+  Repos Page
+**********/
