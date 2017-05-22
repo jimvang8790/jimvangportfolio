@@ -4,7 +4,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 // Angular configuration (routes)
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
-    template: '<div> This is the default </div>',
+    template: '<div class="home"><h1>Jim Vang</h1><h3>Prime Digital Academy | Full-Stack Software Developer</h3><h3>University of Minnesota | Chemistry</h3><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAApMAAAAJDIzM2NjNGE1LTQwMmQtNGNlNy1iZDhhLTRjOTBlNDIxYjkzMw.jpg"></div>',
     controller: ''
   }).when('/profile', {
     templateUrl: 'views/profile.html',

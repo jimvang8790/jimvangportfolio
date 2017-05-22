@@ -1,0 +1,20 @@
+.jumbotron {
+  text-align: center;
+  font-family: 'Kumar One', cursive;
+  background-image: url('http://www.softhover.com/wp-content/uploads/2016/06/softhover.png');
+  color: ivory;
+}
+
+.nav {
+  text-align: center;
+  font-family: 'Kumar One', cursive;
+}
+
+.tabs {
+  padding: 10px 10px;
+}
+
+.home {
+  text-align: center;
+  font-family: 'Kumar One', cursive;
+}
