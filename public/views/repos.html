@@ -1,4 +1,6 @@
-<div><h1>Jim's Repositories</h1></div>
-<div ng-repeat="item in rc.object">
-  <a ng-href="{{item.html_url}}">Object: {{item.html_url}}</a>
+<div class="profile"><h1>Github Repositories</h1></div>
+<hr class="line">
+<div ng-repeat="item in rc.object" class="repositories col-sm-6">
+  <h3>Repos Name: {{item.name}}</h3>
+  <a ng-href="{{item.html_url}}">Link: {{item.html_url}}</a>
 </div>

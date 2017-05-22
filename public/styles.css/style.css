@@ -1,3 +1,8 @@
+/*body {
+  background-image: url('http://d3819ii77zvwic.cloudfront.net/wp-content/uploads/2013/05/minneapolishealthy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
 .jumbotron {
   text-align: center;
   font-family: 'Kumar One', cursive;
@@ -12,6 +17,7 @@
   text-align: center;
   font-family: 'Kumar One', cursive;
   text-decoration: underline;
+  color: ivory;
 }
 
 .tabs {
@@ -48,3 +54,7 @@
 /*********
   Repos Page
 **********/
+.repositories {
+  text-align: center;
+  font-family: 'Kumar One', cursive;
+}
