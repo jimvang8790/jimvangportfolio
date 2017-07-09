@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 
 //global variable, now port is not hard coded and app can be lanuch using heroku
-var port = process.env.PORT || 3004;
+var port = process.env.PORT || 9000;
 
 // To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
 app.use(express.static('public'));
@@ -17,5 +17,5 @@ app.get('/*', function(req, res) {
 
 // spin up server and is listening on localhost:3004
 app.listen(port, function() {
-  console.log('up 3004');
+  console.log('up 9000');
 });

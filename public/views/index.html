@@ -2,23 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Weekend Challenge 06</title>
+    <title>Jim Vang | Developer</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="vendors/angular-material.min.css">
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-animate.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-aria.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-material.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
     <base href="/">
   </head>
   <body ng-app="myApp">
-    <div class="jumbotron"><h1>Weekend Challenge 06</h1></div>
-    <nav class="nav">
-      <a href="/" class="tabs">Home</a>
-      <a href="/profile" class="tabs">Profile</a>
-      <a href="/repos" class="tabs">Repositories</a>
-    </nav>
+    <div class="jumbotron">
+      <!-- <div class="container"> -->
+        <img class="main-logo" src="images/logo.png">
+        <nav class="nav">
+          <a href="/" class="tabs">Home</a>
+          <a href="/profile" class="tabs">Profile</a>
+          <a href="/repos" class="tabs">Repositories</a>
+        </nav>
+      <!-- </div> -->
+    </div>
     <div>
       <ng-view>
         <!-- Where each html will swap out -->
