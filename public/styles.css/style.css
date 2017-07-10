@@ -1,28 +1,24 @@
 /**************************
-General
+Home Page
 ***************************/
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .jumbotron {
   padding-top: 170px;
-  height: 450px;
+  height: 350px;
   width: 100%;
-  /*background: url("http://www.thisiscolossal.com/wp-content/uploads/2014/01/aqua-4.jpg");
+  /*background: url("https://3.bp.blogspot.com/-Au9WgCXb09c/VvwrlnfBNTI/AAAAAAABc-E/jn0m4P8xTIcAX1Y5Bjq-JJchz9KhAE_xg/s1600/background.png");
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;*/
 }
 
-.main-logo {
-  height: 15vmin;
-}
-
-/**************************
-Home Page
-***************************/
 .nav {
   text-align: center;
-  text-decoration: underline;
-  color: ivory;
+
 }
 
 .tabs {
@@ -38,25 +34,17 @@ Home Page
 }
 
 /**************************
-Profile Page
+About Page
 ***************************/
-.container,
-.profile,
-.info {
-  text-align: center;
-}
 
-.gitImage {
-  border-radius: 50%;
-}
 
-.line {
-  border-top: 3px double #8c8b8b;
-}
 
 /**************************
-Repo Page
+Profile Page
 ***************************/
-.repositories {
-  text-align: center;
-}
+
+
+
+/**************************
+Contact Page
+***************************/
