@@ -17,19 +17,27 @@
     <base href="/">
   </head>
   <body ng-app="myApp">
-    <div class="jumbotron">
-        <img class="main-logo" src="images/logo.png">
-        <nav class="nav">
-          <a href="/" class="tabs">Home</a>
-          <a href="/about" class="tabs">About</a>
-          <a href="/profile" class="tabs">Profile</a>
-          <a href="/contact" class="tabs">Contact</a>
-        </nav>
-    </div>
+      <header>
+        <!-- <div class="jumbotron"> -->
+            <img class="main-logo" src="images/logo.png">
+            <nav class="nav">
+              <a href="/" class="tabs">Home</a>
+              <a href="/about" class="tabs">About</a>
+              <a href="/profile" class="tabs">Profile</a>
+              <a href="/contact" class="tabs">Contact</a>
+            </nav>
+        <!-- </div> -->
+      </header>
     <div>
       <ng-view>
         <!-- Where each html will swap out -->
       </ng-view>
     </div>
+    <footer>
+      <a href="https://www.linkedin.com/in/jim-vang-283609133"><img src="images/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
+      <a href="https://github.com/jimvang8790"><img src="images/github.png" alt="Github logo" class="social-icon"></a>
+      <a href="mailto:vangjim15@gmail.com"><img src="images/email.png" alt="Mail logo" class="social-icon"></a>
+      <p>&copy; 2017 Jim Vang.</p>
+    </footer>
   </body>
 </html>

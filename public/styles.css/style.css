@@ -5,7 +5,7 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.jumbotron {
+/*.jumbotron {
   padding-top: 170px;
   height: 350px;
   width: 100%;
@@ -14,11 +14,21 @@ body{
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;*/
+/*}*/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  background: #d3d3d3;
+  border-color: #a9a9a9;
 }
 
 .nav {
   text-align: center;
-
+  padding: 10px 0;
+  margin-left: 20px 0 0;
 }
 
 .tabs {
@@ -48,3 +58,23 @@ Profile Page
 /**************************
 Contact Page
 ***************************/
+
+
+
+/**************************
+Footer
+***************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
