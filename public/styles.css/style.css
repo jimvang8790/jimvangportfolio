@@ -67,7 +67,11 @@ About Page
 Profile Page
 ***************************/
 
-
+.img-responsive {
+  height: 400px;
+  width: 700px;
+  border-radius:
+}
 
 /**************************
 Contact Page
