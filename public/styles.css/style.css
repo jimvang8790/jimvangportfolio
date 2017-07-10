@@ -6,17 +6,6 @@ body{
   font-size: 2em;
 }
 
-/*.jumbotron {
-  padding-top: 170px;
-  height: 350px;
-  width: 100%;
-  /*background: url("https://3.bp.blogspot.com/-Au9WgCXb09c/VvwrlnfBNTI/AAAAAAABc-E/jn0m4P8xTIcAX1Y5Bjq-JJchz9KhAE_xg/s1600/background.png");
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;*/
-/*}*/
-
 header {
   float: left;
   margin: 0 0 30px 0;
@@ -84,7 +73,36 @@ Profile Page
 Contact Page
 ***************************/
 
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('/images/telephone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('/images/email.png');
+}
+
+.contact-info li.linkedin a {
+  background-image: url('/images/linkedin.png');
+}
+
+.contact-info li.github a {
+  background-image: url('/images/github.png');
+}
 
 /**************************
 Footer

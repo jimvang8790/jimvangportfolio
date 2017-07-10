@@ -16,4 +16,3 @@ myApp.config(function($routeProvider, $locationProvider) {
   }).otherwise('/');
   $locationProvider.html5Mode(true);
 });// end config
-// });// end ReposController
