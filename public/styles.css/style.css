@@ -70,7 +70,7 @@ Profile Page
 .img-responsive {
   height: 400px;
   width: 700px;
-  border-radius:
+  border: 2px solid #f2f2f2;
 }
 
 /**************************
