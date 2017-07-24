@@ -58,11 +58,13 @@ About Page
   height: 15vmin;
   width: 15vmin;
   padding: 1vmin 1vmin;
+  text-align: center;
 }
 
 .row {
   margin: 10px 10px;
 }
+
 
 /**************************
 Profile Page
