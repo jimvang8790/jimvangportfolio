@@ -8,7 +8,7 @@ myApp.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/about.html',
     controller: 'AboutController as ac'
   }).when('/profile', {
-    templateUrl: 'views/profile.html',
+    templateUrl: 'views/projects.html',
     controller: 'ProfileController as pc'
   }).when('/contact', {
     templateUrl: 'views/contact.html',
