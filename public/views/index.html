@@ -1,39 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <title>Jim Vang | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="icon" href="images/mind.png" type="image/png">
-    <link rel="stylesheet" href="vendors/angular-material.min.css">
-    <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="vendors/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <base href="/">
   </head>
-  <body ng-app="myApp">
-    <div class="container"></div>
-      <header>
-            <img class="main-logo" src="images/webDevLogo.png">
-            <nav class="nav">
-              <a href="/" class="tabs">Home</a>
-              <a href="/about" class="tabs">About</a>
-              <a href="/profile" class="tabs">Projects</a>
-              <a href="/contact" class="tabs">Contact</a>
-            </nav>
-      </header>
-    <div>
-      <ng-view>
-        <!-- Where each html will swap out -->
-      </ng-view>
-    </div>
+  <body>
+    <header>
+      <nav class="nav navbar-fixed-top" role="navigation">
+        <div class="container">
+          <a href="#main-section" class="home"><img class="main-logo" src="images/webDevLogo.png"></a>
+          <div class="main-tab">
+            <a href="#about" class="tabs">About</a>
+            <a href="#profile" class="tabs">Projects</a>
+            <a href="#contact" class="tabs">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <section id="main-section">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div id="main-info">
+              <div class="title">
+                <h1 class="h1">Jim Vang</h1>
+              </div>
+              <div class="info">
+                <h3 class="h3">Prime Digital Academy | Full-Stack Software Engineer</h3>
+                <h3 class="h3">University of Minnesota | Chemistry</h3>
+              </div>
+              <img src="images/jimvang.jpg" alt="Photo of Jim Vang" class="profile-photo">
+            </div> <!-- end main-info -->
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </section> <!-- end section -->
+      <section id="about">
+        <!-- <div class="container">
+          <div class="container">
+            <h2>About</h2>
+            <p>Hi, I am Jim Vang! I have a Chemistry background from the University of Minnesota, Twin Cities. I am pursuing a career in Web Development and graduated from Prime Digital Academy as a Full-Stack Software Engineer. I am very passionate about the tech world and eager to grow as a Web Developer in this ever-changing field. I would like to utilize the skills I gained from Prime Digital Academy as either a Front-end Developer or a Back-end Developer.</p>
+            <p>I founded Chemistry and coding to be very similar. Taking known chemicals and mixing them to achieve a known product is like writing lines of code to make a wanted function. Working in the Chemistry field taught me how to work in a team to achieve project deadlines with high quality work. It also taught me how to follow guidelines and regulations to achieve desired results.</p>
+            <p>Over the past three months, I’ve had the opportunity to grow and develop as a Full-Stack Software Engineer and I'm seeking an innovative, forward thinking company that will allow me to continue to do so. I’ve found software development to be rewarding and exciting, while also challenging!</p>
+          </div>
+          <div class="container">
+            <h2>Experience</h2>
+            <p>The time I spent at Prime taught me more than I ever imagined. I knew which stack I would be learning (MEAN Stack) and which area we would be focusing on, but I wasn’t expecting to learn more about myself as a lifelong learner and critical thinker. The amount of information that I absorbed during Prime makes me believe that I can picking up just about any language or technology out there. While I understand that it will take time to master new crafts, I know that I'm capable of finding success in whatever I dive into next.</p>
+          </div>
+          <div class="container">
+            <h2>Techincal Skills</h2>
+            <div class="row">
+              <div class="col-xs-6 col-md-3"><img src="images/html.png" class="skills"><span>HTML5</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/css.png" class="skills"><span>CSS3</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/js.png" class="skills"><span>JavaScript</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/jQuery.png" class="skills"><span>jQuery</span></div>
+
+              <div class="col-xs-6 col-md-3"><img src="images/mongodb.png" class="skills"><span>MongoDB</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/angularjs.png" class="skills"><span>AngularJS</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/nodejs.png" class="skills"><span>Node.js</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/git.png" class="skills"><span>Git</span></div>
+
+              <div class="col-xs-6 col-md-3"><img src="images/react.png" class="skills"><span>React</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/relay.png" class="skills"><span>Relay</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/graphql.png" class="skills"><span>GraphQL</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/graphcool.png" class="skills"><span>Graphcool</span></div>
+
+              <div class="col-xs-6 col-md-3"><img src="images/npm.png" class="skills"><span>npm</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/Bootstrap.png" class="skills"><span>Bootstrap</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/php.png" class="skills"><span>PHP</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/heroku.png" class="skills"><span>Heroku</span></div>
+
+              <div class="col-xs-6 col-md-3"><img src="images/githublogo.png" class="skills"><span>Github</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/bitbucket.png" class="skills"><span>Bitbucket</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/materialui.png" class="skills"><span>Material-UI</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/twilio.png" class="skills"><span>Twilio</span></div>
+
+              <div class="col-xs-6 col-md-3"><img src="images/postgresql.png" class="skills"><span>PostgreSQL</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/postico.png" class="skills"><span>Postico</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/robomongo.png" class="skills"><span>Robomongo</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/stackoverflow.png" class="skills"><span>Stack Overflow</span></div>
+
+              <div class="col-xs-6 col-md-3"><img src="images/filestack.png" class="skills"><span>Filestack</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/grunt.png" class="skills"><span>Grunt</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/ajax.png" class="skills"><span>Ajax</span></div>
+              <div class="col-xs-6 col-md-3"><img src="images/json.png" class="skills"><span>JSON</span></div>
+            </div>
+          </div>
+          <div class="container">
+            <h2>Learn More</h2>
+            <p>If you’d like to find out more about how I work and my process of working with clients, please visit the <a href="/contact">contact</a> page. I welcome any additional questions and I'm always open to talk about new tech or just talk in general. Thank you!</p>
+          </div>
+          </div>
+        </div> -->
+      </section> <!-- end about -->
+    </div> <!-- end wrapper -->
     <footer>
       <a href="https://www.linkedin.com/in/jim-vang-283609133" target="_blank"><img src="images/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
       <a href="https://github.com/jimvang8790" target="_blank"><img src="images/github.png" alt="Github logo" class="social-icon"></a>
       <a href="mailto:vangjim15@gmail.com"><img src="images/email.png" alt="Mail logo" class="social-icon"></a>
       <p>&copy; 2017 Jim Vang</p>
     </footer>
+    <!-- <script src="vendors/js/jquery-1.11.1.min.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/slick.min.js"></script>
+    <script src="vendors/js/waypoints.min.js"></script>
+    <script src="vendors/js/scripts.js"></script> -->
+    <!-- <script src="scripts/client.js" charset="utf-8"></script> -->
+    <!-- <link rel="stylesheet" href="vendors/angular-material.min.css"> -->
+    <!-- <script src="vendors/angular.min.js" charset="utf-8"></script> -->
+    <!-- <script src="vendors/angular-route.min.js" charset="utf-8"></script> -->
   </body>
 </html>

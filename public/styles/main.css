@@ -1,50 +1,93 @@
 /**************************
-Home Page
+Generals
 ***************************/
+
 body{
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2em;
-}
-
-header {
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%;
-  background: #f2f2f2;
 }
 
 h2  {
   font-weight: bold;
 }
 
+/**************************
+Nav
+***************************/
+
 .nav {
-  text-align: center;
-  padding: 10px 0;
-  margin-left: 20px 0 0;
+  float: left;
+  background: #fff;
+  width: 100%;
+}
+
+.main-logo {
+  float: left;
+}
+
+.main-tab {
+  text-align: right;
+  margin-top: 20px;
 }
 
 .tabs {
   padding: 10px 10px;
 }
 
-.home {
+/*.home {
   text-align: center;
-}
+}*/
 
-.link {
+/*.link {
   display: block;
   height: 40vmin;
   width: 60vmin;
   margin: 0 auto 30px;
   border-radius: 10%;
+}*/
+
+/**************************
+Main Section
+***************************/
+
+#main-section {
+    background: white url("/images/minsky.jpg") no-repeat fixed 100%;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
+
+#main-info {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    text-align:center;
+}
+
+.main-header {
+    margin-bottom: 40px;
+}
+
+.profile-photo {
+  height: 30vmin;
+  width: 40vmin;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 
 /**************************
 About Page
 ***************************/
 
-.profile-photo {
+/*.profile-photo {
   display: block;
   height: 30vmin;
   width: 40vmin;
@@ -52,7 +95,7 @@ About Page
   border-radius: 10%;
   float: left;
   margin: 0 5% 30px 0;
-}
+}*/
 
 .skills {
   height: 15vmin;
