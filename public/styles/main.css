@@ -177,8 +177,6 @@ Experience
 
 #experience {
     background-color: #323232;
-    /*background-size: cover;
-    background-attachment: fixed;*/
     color: #FFF;
 }
 
@@ -190,10 +188,34 @@ Experience
 Projects Page
 ***************************/
 
-.img-responsive {
-  height: 400px;
-  width: 700px;
-  border: 2px solid #f2f2f2;
+#projects {
+  background: white url("/images/projects.jpg") no-repeat fixed 100%;
+  position: relative;
+  height: 100%;
+  min-height: 700px;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  color: #fff;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 /**************************
