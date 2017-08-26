@@ -11,10 +11,6 @@ h2  {
   font-weight: bold;
 }
 
-a:active {
-    color: yellow;
-}
-
 section {
   position: relative;
   padding: 45px 0;
@@ -218,9 +214,53 @@ Projects Page
 	transform: scale(1.3);
 }
 
+.hover01 figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /**************************
-Contact Page
+Footer
 ***************************/
+
+footer {
+  background: #222 !important;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.profile-photo2 {
+  height: 12vmin;
+  width: 14vmin;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+}
 
 .contact-info {
   list-style: none;
@@ -233,16 +273,14 @@ Contact Page
   min-height: 20px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
 }
 
 .contact-info li.phone a {
-  background-image: url('/images/telephone.png');
+  background-image: url('/images/phone.png');
 }
 
 .contact-info li.mail a {
-  background-image: url('/images/email.png');
+  background-image: url('/images/gmail.png');
 }
 
 .contact-info li.linkedin a {
@@ -253,20 +291,11 @@ Contact Page
   background-image: url('/images/github.png');
 }
 
-/**************************
-Footer
-***************************/
-
-footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #ccc;
+.footer-nav {
+  text-align: left;
 }
 
-.social-icon {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+.copy-right {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
