@@ -210,26 +210,4 @@ $(document).ready(function() {
             html.push('</a>');
         }
     }
-    var TWEET_URL = '//agentave-api.herokuapp.com/tweet';
-    //var TWEET_URL = 'http://localhost:4000/tweet';
-    $.get(TWEET_URL, function (response) {
-        var twitterList = $('.tweet ul');
-        $.each(response, function (index, tweet) {
-            twitterList.append('<li class="sp-effect3">'+ linky(tweet.text) +'</li>');
-        });
-    });
-
-    // Testimonial
-    var n = 0;
-    $('.slide').eq(n).addClass('active fadeInUp animated');
-    setInterval(function () {
-        n++;
-        if (n === 3) {
-            n = 0;
-        }
-        $('.slide').each(function (n) {
-            $('.slide').eq(n).removeClass('active fadeInUp animated');
-        });
-        $('.slide').eq(n).addClass('active fadeInUp animated');
-    }, 10000);
 });

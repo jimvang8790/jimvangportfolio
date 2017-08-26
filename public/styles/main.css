@@ -15,6 +15,16 @@ section {
   position: relative;
   padding: 45px 0;
 }
+section::before,
+section::after{
+    pointer-events: none;
+    overflow: hidden;
+    display: block;
+    content: " ";
+    margin-top: -10px;
+    height: 15px;
+    visibility: hidden;
+}
 
 .divider {
     width: 100%;
